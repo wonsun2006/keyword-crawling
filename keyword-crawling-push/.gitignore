@@ -39,3 +39,5 @@ out/
 # JWT Config
 jwt.yml
 
+# Firebase Config
+firebase_service_key.json
