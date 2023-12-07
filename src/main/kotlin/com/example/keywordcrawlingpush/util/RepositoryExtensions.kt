@@ -1,4 +1,4 @@
-package com.example.keywordcrawling.util
+package com.example.keywordcrawlingpush.util
 
 import org.springframework.dao.DataIntegrityViolationException
 import org.springframework.data.jpa.repository.JpaRepository

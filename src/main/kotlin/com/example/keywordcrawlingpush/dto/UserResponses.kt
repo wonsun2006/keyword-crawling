@@ -1,7 +1,7 @@
-package com.example.keywordcrawling.dto
+package com.example.keywordcrawlingpush.dto
 
-import com.example.keywordcrawling.common.UserRole
-import com.example.keywordcrawling.entity.User
+import com.example.keywordcrawlingpush.common.UserRole
+import com.example.keywordcrawlingpush.entity.User
 
 data class SignUpResponse(
     val userSn: Long? = null,

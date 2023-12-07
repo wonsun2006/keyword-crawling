@@ -1,4 +1,4 @@
-package com.example.keywordcrawling.security
+package com.example.keywordcrawlingpush.security
 
 import org.springframework.boot.autoconfigure.security.servlet.PathRequest
 import org.springframework.context.annotation.Bean

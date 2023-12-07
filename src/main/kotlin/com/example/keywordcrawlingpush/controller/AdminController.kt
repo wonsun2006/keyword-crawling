@@ -1,7 +1,7 @@
-package com.example.keywordcrawling.controller
+package com.example.keywordcrawlingpush.controller
 
-import com.example.keywordcrawling.dto.UserInfoResponse
-import com.example.keywordcrawling.service.UserService
+import com.example.keywordcrawlingpush.dto.UserInfoResponse
+import com.example.keywordcrawlingpush.service.UserService
 import org.springframework.security.access.prepost.PreAuthorize
 import org.springframework.web.bind.annotation.*
 

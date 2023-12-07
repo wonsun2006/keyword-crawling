@@ -1,4 +1,4 @@
-package com.example.keywordcrawling
+package com.example.keywordcrawlingpush
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

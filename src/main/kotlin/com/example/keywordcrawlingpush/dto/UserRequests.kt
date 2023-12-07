@@ -1,6 +1,6 @@
-package com.example.keywordcrawling.dto
+package com.example.keywordcrawlingpush.dto
 
-import com.example.keywordcrawling.common.UserRole
+import com.example.keywordcrawlingpush.common.UserRole
 
 data class SignInRequest(
     val userId: String,

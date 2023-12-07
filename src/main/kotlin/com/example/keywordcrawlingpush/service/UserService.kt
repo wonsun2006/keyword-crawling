@@ -1,10 +1,10 @@
-package com.example.keywordcrawling.service
+package com.example.keywordcrawlingpush.service
 
-import com.example.keywordcrawling.dto.*
-import com.example.keywordcrawling.entity.User
-import com.example.keywordcrawling.repository.UserRepository
-import com.example.keywordcrawling.security.TokenProvider
-import com.example.keywordcrawling.util.flushOrThrow
+import com.example.keywordcrawlingpush.dto.*
+import com.example.keywordcrawlingpush.entity.User
+import com.example.keywordcrawlingpush.repository.UserRepository
+import com.example.keywordcrawlingpush.security.TokenProvider
+import com.example.keywordcrawlingpush.util.flushOrThrow
 import org.springframework.security.crypto.password.PasswordEncoder
 
 import org.springframework.stereotype.Service

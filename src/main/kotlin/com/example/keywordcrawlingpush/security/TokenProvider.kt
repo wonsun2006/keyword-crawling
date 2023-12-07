@@ -1,4 +1,4 @@
-package com.example.keywordcrawling.security
+package com.example.keywordcrawlingpush.security
 
 import io.jsonwebtoken.Jwts
 import io.jsonwebtoken.SignatureAlgorithm

@@ -1,6 +1,6 @@
-package com.example.keywordcrawling.repository
+package com.example.keywordcrawlingpush.repository
 
-import com.example.keywordcrawling.entity.User
+import com.example.keywordcrawlingpush.entity.User
 import org.springframework.data.jpa.repository.JpaRepository
 import org.springframework.stereotype.Repository
 

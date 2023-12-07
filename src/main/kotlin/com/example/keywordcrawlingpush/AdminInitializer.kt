@@ -1,8 +1,8 @@
-package com.example.keywordcrawling
+package com.example.keywordcrawlingpush
 
-import com.example.keywordcrawling.common.UserRole
-import com.example.keywordcrawling.entity.User
-import com.example.keywordcrawling.repository.UserRepository
+import com.example.keywordcrawlingpush.common.UserRole
+import com.example.keywordcrawlingpush.entity.User
+import com.example.keywordcrawlingpush.repository.UserRepository
 import org.springframework.boot.ApplicationArguments
 import org.springframework.boot.ApplicationRunner
 import org.springframework.security.crypto.password.PasswordEncoder

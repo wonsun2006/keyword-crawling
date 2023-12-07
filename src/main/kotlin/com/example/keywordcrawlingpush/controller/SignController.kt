@@ -1,8 +1,8 @@
-package com.example.keywordcrawling.controller
+package com.example.keywordcrawlingpush.controller
 
-import com.example.keywordcrawling.dto.SignInRequest
-import com.example.keywordcrawling.dto.SignUpRequest
-import com.example.keywordcrawling.service.UserService
+import com.example.keywordcrawlingpush.dto.SignInRequest
+import com.example.keywordcrawlingpush.dto.SignUpRequest
+import com.example.keywordcrawlingpush.service.UserService
 import org.springframework.web.bind.annotation.*
 
 

@@ -1,8 +1,8 @@
-package com.example.keywordcrawling.entity
+package com.example.keywordcrawlingpush.entity
 
-import com.example.keywordcrawling.common.UserRole
-import com.example.keywordcrawling.dto.SignUpRequest
-import com.example.keywordcrawling.dto.UserUpdateRequest
+import com.example.keywordcrawlingpush.common.UserRole
+import com.example.keywordcrawlingpush.dto.SignUpRequest
+import com.example.keywordcrawlingpush.dto.UserUpdateRequest
 import jakarta.persistence.*
 import org.springframework.security.crypto.password.PasswordEncoder
 
