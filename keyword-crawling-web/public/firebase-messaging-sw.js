@@ -7,9 +7,11 @@ const firebaseConfig = {
   projectId: "keyword-crawling-95744",
   storageBucket: "keyword-crawling-95744.appspot.com",
   messagingSenderId: "794539820257",
-  appId: "1:794539820257:web:fde89829e5e95f8b4d23a0"
+  appId: "1:794539820257:web:fde89829e5e95f8b4d23a0",
 };
 
-firebase.initializeApp("BNBLamzgqTg9-evmWyPH0mgz4WQpsiDnzf79tqNgtBnd0OnpJfJ6GO1gOyC_ggcj66rySoESeieo7YgF9iX3Egs");
+firebase.initializeApp(
+  "BNBLamzgqTg9-evmWyPH0mgz4WQpsiDnzf79tqNgtBnd0OnpJfJ6GO1gOyC_ggcj66rySoESeieo7YgF9iX3Egs"
+);
 
 const messaging = firebase.messaging();
