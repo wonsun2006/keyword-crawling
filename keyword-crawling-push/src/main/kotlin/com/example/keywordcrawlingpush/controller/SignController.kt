@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.*
 @RestController
 class SignController(val userService: UserService){
     @PostMapping("/sign-up")
-    fun signUp(request: SignUpRequest) = userService.registerUser(request)
+    fun signUp(@RequestBody request: SignUpRequest) = userService.registerUser(request)
 
     @PostMapping("/sign-in")
-    fun signIn(request: SignInRequest) = userService.signIn(request)
+    fun signIn(@RequestBody request: SignInRequest) = userService.signIn(request)
 }

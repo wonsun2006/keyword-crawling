@@ -20,3 +20,7 @@ data class UserUpdateRequest(
     val userName: String,
     val role: UserRole
 )
+
+data class UserUpdateTokenRequest(
+        val token: String
+)

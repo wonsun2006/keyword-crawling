@@ -36,6 +36,10 @@ dependencies {
     runtimeOnly("io.jsonwebtoken:jjwt-jackson:0.11.5")
     // FCM
     implementation("com.google.firebase:firebase-admin:9.2.0")
+    // Spring Boot Dev Tool
+    compileOnly("org.springframework.boot:spring-boot-devtools")
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:4.12.0")
 }
 
 tasks.withType<KotlinCompile> {

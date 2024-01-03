@@ -39,11 +39,17 @@ class UserService(val userRepository: UserRepository,
     }
 
     @Transactional
-    fun updateUser(id: String, request: UserUpdateRequest): UserUpdateResponse {
-        val user = userRepository.findByUserId(id)?.takeIf { encoder.matches(request.password, it.password) }
+    fun updateUser(sn: Long, request: UserUpdateRequest): UserUpdateResponse {
+        val user = userRepository.findByUserSn(sn)?.takeIf { encoder.matches(request.password, it.password) }
             ?: throw IllegalArgumentException("아이디 또는 비밀번호가 일치하지 않습니다.")
         user.update(request, encoder)
         return UserUpdateResponse.of(true, user)
+    }
+
+    fun getUserSn(userId: String): Long? {
+        val user = userRepository.findByUserId(userId)
+            ?: throw IllegalArgumentException("아이디가 존재하지 않습니다.")
+        return user.userSn
     }
 }
 

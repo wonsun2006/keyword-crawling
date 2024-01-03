@@ -5,30 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2de847f9-4f21-4539-973a-52eb2bd0b267" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/AdminInitializer.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/KeywordCrawlingApplication.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/common/UserRole.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/controller/AdminController.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/controller/SignController.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/dto/UserRequests.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/dto/UserResponses.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/entity/User.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/repository/UserRepository.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/security/JwtAuthenticationFilter.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/security/SecurityConfig.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/security/TokenProvider.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/service/UserService.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/keywordcrawlingpush/util/RepositoryExtensions.kt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/example/keywordcrawlingpush/KeywordCrawlingApplicationTests.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,10 +25,10 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "customColor": "",
-  "associatedIndex": 7
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="2ZDiQDvffVZMcGEnG9vgzDCnc7D" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,7 +41,7 @@
     "WebServerToolWindowFactoryState": "false",
     "android.gradle.sync.needed": "true",
     "git-widget-placeholder": "main",
-    "last_opened_file_path": "C:/Development/keyword-crawling/keyword-crawling-push",
+    "last_opened_file_path": "D:/Development/keyword-crawling/keyword-crawling-push",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -75,6 +54,7 @@
       <option name="presentableId" value="Default" />
       <updated>1701963034962</updated>
       <workItem from="1701963039364" duration="61000" />
+      <workItem from="1703752631189" duration="101000" />
     </task>
     <servers />
   </component>
