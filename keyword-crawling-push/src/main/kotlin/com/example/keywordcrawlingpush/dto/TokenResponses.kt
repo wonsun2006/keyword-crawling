@@ -13,3 +13,15 @@ data class AddDeviceTokenResponse(
         )
     }
 }
+
+data class DeleteDeviceTokenResponse(
+        val result: Boolean,
+        val message: String? = null
+){
+    companion object {
+        fun of(result: Boolean, message: String?) = DeleteDeviceTokenResponse(
+            result = result,
+            message = message
+        )
+    }
+}

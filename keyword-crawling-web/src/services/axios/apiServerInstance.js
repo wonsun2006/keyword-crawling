@@ -5,16 +5,6 @@ const api = axios.create({
   headers: {
     "Content-Type": "application/json",
   },
-  // transformRequest: [
-  //   (data) => {
-  //     // 객체를 쿼리 문자열로 변환
-  //     const formData = new URLSearchParams();
-  //     for (const key in data) {
-  //       formData.append(key, data[key]);
-  //     }
-  //     return formData.toString();
-  //   },
-  // ],
 });
 
 // Axios 인터셉터를 사용하여 모든 요청에 토큰 추가

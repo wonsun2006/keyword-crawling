@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*
 
 @RestController
 @RequestMapping("/users/{id}/tokens")
+@PreAuthorize("hasRole('USER')")
 class TokenController(
     val deviceTokenService: DeviceTokenService,
     val tokenProvider: TokenProvider,
@@ -18,9 +19,8 @@ class TokenController(
     @PostMapping
     fun addDeviceToken(@PathVariable id:Long, @RequestBody request: AddDeviceTokenRequest, authentication: Authentication): AddDeviceTokenResponse {
         val userToken = authentication.credentials as String
-        val userData = tokenProvider.validateTokenAndGetSubject(userToken)
-        if (userData is String){
-            val userId = userData.split(":").let { it[0] }
+        val userId = tokenProvider.getUserId(userToken)
+        if (userId is String){
             val userSn = userService.getUserSn(userId)
             if (id == userSn) {
                 return deviceTokenService.addDeviceToken(id, request)
@@ -28,5 +28,19 @@ class TokenController(
         }
 
         return AddDeviceTokenResponse.of(false, null, "권한이 없습니다.")
+    }
+
+    @DeleteMapping
+    fun deleteDeviceToken(@PathVariable id:Long, @RequestBody request: DeleteDeviceTokenRequest, authentication: Authentication): DeleteDeviceTokenResponse {
+        val userToken = authentication.credentials as String
+        val userId = tokenProvider.getUserId(userToken)
+        if (userId is String){
+            val userSn = userService.getUserSn(userId)
+            if (id == userSn) {
+                return deviceTokenService.deleteDeviceToken(id, request.deviceToken)
+            }
+        }
+
+        return DeleteDeviceTokenResponse.of(false, "권한이 없습니다.")
     }
 }

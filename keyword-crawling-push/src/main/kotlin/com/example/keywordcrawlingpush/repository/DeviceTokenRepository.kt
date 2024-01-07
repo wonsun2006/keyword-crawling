@@ -8,4 +8,5 @@ import org.springframework.stereotype.Repository
 @Repository
 interface DeviceTokenRepository : JpaRepository<DeviceToken?, Long?> {
     fun findByUserSn(userSn: Long?): DeviceToken?
+    fun findByUserSnAndDeviceToken(userSn: Long?, deviceToken: String?): DeviceToken?
 }

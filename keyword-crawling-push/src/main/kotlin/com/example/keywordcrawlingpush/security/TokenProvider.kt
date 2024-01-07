@@ -36,4 +36,10 @@ class TokenProvider(
         .parseClaimsJws(token)
         .body
         .subject
+
+    fun getUserId(token: String): String? =
+        validateTokenAndGetSubject(token)
+        ?.takeIf { it.matches(Regex("[^:]*:[^:]*")) }
+        ?.split(":")
+        ?.get(0)
 }
