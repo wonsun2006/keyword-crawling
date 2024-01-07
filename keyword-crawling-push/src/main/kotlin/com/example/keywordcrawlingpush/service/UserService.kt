@@ -35,7 +35,7 @@ class UserService(val userRepository: UserRepository,
             ?.takeIf { encoder.matches(request.password, it.password) }
             ?: throw IllegalArgumentException("아이디 또는 비밀번호가 일치하지 않습니다.")
         val token = tokenProvider.createToken("${user.userId}:${user.role}")
-        return SignInResponse(user.userName, user.role, token)
+        return SignInResponse(user.userSn, user.userName, user.role, token)
     }
 
     @Transactional

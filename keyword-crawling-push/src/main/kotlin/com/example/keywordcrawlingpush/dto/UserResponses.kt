@@ -20,6 +20,7 @@ data class SignUpResponse(
 }
 
 data class SignInResponse(
+    val userSn: Long?,
     val userName: String?,
     val role: UserRole?,
     val token: String?
