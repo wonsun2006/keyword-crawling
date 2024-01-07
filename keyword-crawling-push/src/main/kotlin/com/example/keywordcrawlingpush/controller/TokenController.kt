@@ -16,6 +16,20 @@ class TokenController(
     val tokenProvider: TokenProvider,
     val userService: UserService
 ){
+    @GetMapping
+    fun getDeviceTokens(@PathVariable id:Long, authentication: Authentication): GetDeviceTokensResponse {
+        val userToken = authentication.credentials as String
+        val userId = tokenProvider.getUserId(userToken)
+        if (userId is String){
+            val userSn = userService.getUserSn(userId)
+            if (id == userSn) {
+                return deviceTokenService.getDeviceTokens(id)
+            }
+        }
+
+        return GetDeviceTokensResponse()
+    }
+
     @PostMapping
     fun addDeviceToken(@PathVariable id:Long, @RequestBody request: AddDeviceTokenRequest, authentication: Authentication): AddDeviceTokenResponse {
         val userToken = authentication.credentials as String

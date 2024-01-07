@@ -3,6 +3,7 @@ package com.example.keywordcrawlingpush.service
 import com.example.keywordcrawlingpush.dto.AddDeviceTokenRequest
 import com.example.keywordcrawlingpush.dto.AddDeviceTokenResponse
 import com.example.keywordcrawlingpush.dto.DeleteDeviceTokenResponse
+import com.example.keywordcrawlingpush.dto.GetDeviceTokensResponse
 import com.example.keywordcrawlingpush.entity.DeviceToken
 import com.example.keywordcrawlingpush.repository.DeviceTokenRepository
 import com.example.keywordcrawlingpush.util.flushOrThrow
@@ -28,5 +29,10 @@ class DeviceTokenService(val deviceTokenRepository: DeviceTokenRepository) {
         deviceTokenRepository.delete(tokenData)
 
         return DeleteDeviceTokenResponse.of(true, "디바이스 토큰이 삭제되었습니다.")
+    }
+
+    fun getDeviceTokens(id: Long): GetDeviceTokensResponse {
+        val result = deviceTokenRepository.findAllByUserSn(id)
+        return GetDeviceTokensResponse.of(result)
     }
 }
