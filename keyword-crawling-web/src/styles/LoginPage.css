@@ -1,0 +1,25 @@
+.login-button {
+    background-color: #EF233C;
+    --bs-btn-active-bg: #CC1F33;
+    color: white;
+    padding: 10px 15px;
+    margin: 4px 0;
+    border: none;
+}
+
+.login-button:hover {
+    background-color: #D90429;
+}
+
+.login-guide-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #2b2d42;
+}
+
+@media (min-width: 720px) {
+    .login-container {
+        width: 600px;
+    }
+}

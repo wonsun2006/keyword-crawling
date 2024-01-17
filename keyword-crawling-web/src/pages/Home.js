@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { initializeApp } from "firebase/app";
 import { getMessaging, getToken, onMessage } from "firebase/messaging";
-
+// FCM 로직을 위해 보류
 const Home = () => {
   const navigate = useNavigate();
   const [userName, setUserName] = useState("");

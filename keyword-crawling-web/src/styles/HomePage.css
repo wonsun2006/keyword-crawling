@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.brand-text{
+    font-family: 'JalnanGothic';
+    color: #EF233C;
+}
+
+.brand-text:hover {
+    color: #EF233C;
+}
+
+.main-heading{
+    font-family: 'JalnanGothic';
+    font-size: 36px;
+    text-align: center;
+}

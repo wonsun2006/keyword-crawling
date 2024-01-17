@@ -1,0 +1,39 @@
+.register-button {
+    background-color: #EF233C;
+    --bs-btn-active-bg: #CC1F33;
+    color: white;
+    padding: 10px 15px;
+    margin: 4px 0;
+    border: none;
+}
+
+.register-button:hover {
+    background-color: #D90429;
+}
+
+.register-header-text {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #2b2d42;
+}
+
+.cancle-button {
+    background-color: #edf2f4;
+    --bs-btn-active-bg: #8d99ae;
+    color: black;
+    padding: 10px 15px;
+    margin: 4px 0;
+    border: 1;
+    border-color: #8d99ae;
+}
+
+.cancle-button:hover {
+    background-color: #8d99ae;
+}
+
+@media (min-width: 720px) {
+    .register-container {
+        width: 600px;
+    }
+}
