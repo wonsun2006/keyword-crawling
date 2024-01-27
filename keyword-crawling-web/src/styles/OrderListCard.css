@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'JalnanGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_231029@1.1/JalnanGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.table th {
+    font-weight: 600;
+    color: #2B2D42;
+}
+
+.card-header{
+    background-color: #EDF2F4;
+}
+
+.card-title{
+    font-weight: 600;
+    color: #D90429;
+}
+
+/* .card-title{
+    font-weight: 600;
+    color: #FFFFFF;
+}
+
+.card-header{
+    background-color: #8D99AE
+} */

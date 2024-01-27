@@ -9,7 +9,7 @@ const TopNavBar = () => {
 
   useEffect(() => {
     const session_token = sessionStorage.getItem("token");
-    if (!session_token) {
+    if (!session_token && !process.env.REACT_APP_DEBUG) {
       setIsLogin(false);
       navigate("/");
     } else {

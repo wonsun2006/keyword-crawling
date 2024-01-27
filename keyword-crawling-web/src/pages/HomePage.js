@@ -1,9 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/HomePage.css";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Image from "react-bootstrap/Image";
+import { Row, Container, Image } from "react-bootstrap";
 import HeadingCardArea from "../components/HeadingCardArea";
 import TopNavBar from "../components/TopNavBar";
 
@@ -23,7 +21,9 @@ const HomePage = () => {
         <br />
         어떤 키워드에 관심이 있을까요?
       </Row>
-      <HeadingCardArea />
+      <Row className="mb-4">
+        <HeadingCardArea />
+      </Row>
     </Container>
   );
 };
